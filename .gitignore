@@ -1,6 +1,8 @@
 # Target Folder
 **/target/
 
+**/bin/*
+
 **/.settings/**
 
 # Project & Classpath files
