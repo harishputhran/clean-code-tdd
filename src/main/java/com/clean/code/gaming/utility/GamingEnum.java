@@ -29,6 +29,11 @@ public enum GamingEnum {
 			|| this.equals(ROCK) && PAPER.equals(secondPlayerChosenItem)){
 			return GamingResponseEnum.PAPER_WINS;
 		}
+		
+		if(this.equals(SCISSORS) && PAPER.equals(secondPlayerChosenItem)
+			|| this.equals(PAPER) && SCISSORS.equals(secondPlayerChosenItem)){
+			return GamingResponseEnum.SCISSOR_WINS;
+		}
 
 		return this.equals(secondPlayerChosenItem) ? GamingResponseEnum.GAME_TIED : null;		
 	}
