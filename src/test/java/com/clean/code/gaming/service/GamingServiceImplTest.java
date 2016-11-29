@@ -14,7 +14,7 @@ public class GamingServiceImplTest {
 	private static final String ROCK = "Rock";
 	
 	@Test
-	public void returnsNullFromDetermineGameWinnerAsTheImplementationIsNotDone(){
+	public void returnsNullFromDetermineGameWinnerWhenEitherOfPlayerInputsIsInvalid(){
 		
 		assertNull(classToTest.determineGameWinner(null, null));
 	}

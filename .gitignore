@@ -20,3 +20,5 @@
 **/**.log
 /target/
 
+/.classpath
+/bin/
