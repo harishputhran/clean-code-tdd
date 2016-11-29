@@ -9,6 +9,7 @@ package com.clean.code.gaming.utility;
 public enum GamingResponseEnum {
 	
 	ROCK_WINS("rock crushes scissors -> rock wins"),
+	PAPER_WINS("paper covers rock -> paper wins"),
 	GAME_TIED("Tie");
 	
 	private String message;

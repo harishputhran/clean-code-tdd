@@ -35,5 +35,14 @@ public class GamingServiceImplTest {
 	public void returnsRockIsWinnerFromDetermineGameWinnerWhenPlayer2ChoosesRockAndPlayer1ChoosesScissors(){
 		assertEquals(GamingResponseEnum.ROCK_WINS.getMessage(), classToTest.determineGameWinner(GamingEnum.ROCK, GamingEnum.SCISSORS));
 	}
-
+	
+	@Test
+	public void returnsPaperIsWinnerFromDetermineGameWinnerWhenPlayer1ChoosesPaperAndPlayer2ChoosesRock(){
+		assertEquals(GamingResponseEnum.PAPER_WINS.getMessage(), classToTest.determineGameWinner(GamingEnum.PAPER, GamingEnum.ROCK));
+	}
+	
+	@Test
+	public void returnsPaperIsWinnerFromDetermineGameWinnerWhenPlayer1ChoosesRockAndPlayer2ChoosesPaper(){
+		assertEquals(GamingResponseEnum.PAPER_WINS.getMessage(), classToTest.determineGameWinner(GamingEnum.ROCK, GamingEnum.PAPER));
+	}
 }
